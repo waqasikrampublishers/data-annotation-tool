@@ -1,3 +1,7 @@
+import re
+
 def preprocess_data(data):
-    # Add your preprocessing steps here (e.g., tokenization, stopword removal)
+    # Remove special characters and extra whitespace
+    data = re.sub(r'[^\w\s]', '', data)
+    data = re.sub(r'\s+', ' ', data)
     return data
