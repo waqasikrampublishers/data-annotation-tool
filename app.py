@@ -26,7 +26,7 @@ def annotate_data():
 
 # Create the GUI
 root = tk.Tk()
-root.title("Data Annotation Tool")
+root.title("News Article Annotation Tool")
 
 # Create a button to trigger data annotation
 annotate_button = tk.Button(root, text="Annotate Data", command=annotate_data)
